@@ -2,8 +2,8 @@
 pipeline {
     
     environment {
-    imagename = "mnagen/springpetclinic"
-    registryCredential = 'mydockercredentials'
+    imagename = "nnaga696/springpetclinic"
+    registryCredential = 'nnaga696'
     dockerImage = ''
   }
     agent any
@@ -54,7 +54,7 @@ pipeline {
                 echo 'push image'
                 script{
                     
-                 docker.withRegistry( 'nnaga696' ) {
+                 docker.withRegistry('', registryCredential  ) {
                   dockerImage.push("$BUILD_NUMBER")
                   dockerImage.push('latest')
                  }}

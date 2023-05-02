@@ -2,8 +2,8 @@
 pipeline {
     
     environment {
-    imagename = "nnaga696/spring-petclinic"
-    registryCredential = 'nnaga696'
+    imagename = "nnaga696/springpetclinic"
+    registryCredential = 'dockerhub'
     dockerImage = ''
   }
     agent any

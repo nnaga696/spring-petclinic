@@ -54,7 +54,7 @@ pipeline {
                 echo 'push image'
                 script{
                     
-                 docker.withRegistry( '', registryCredential ) {
+                 docker.withRegistry( 'nnaga696' ) {
                   dockerImage.push("$BUILD_NUMBER")
                   dockerImage.push('latest')
                  }}

@@ -2,7 +2,7 @@
 pipeline {
     
     environment {
-    imagename = "nnaga696/springpetclinic"
+    imagename = "nnaga696/spring-petclinic"
     registryCredential = 'nnaga696'
     dockerImage = ''
   }
